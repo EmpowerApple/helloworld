@@ -1,2 +1,2 @@
-require 'helloworld'
+require 'helloworld.rb'
 run Sinatra::Application
