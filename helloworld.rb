@@ -6,7 +6,8 @@ require 'dm-validations'
 require 'dm-timestamps'
 require 'dm-migrations'
 
-DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/corkboard.sqlite3")
+#DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/corkboard.sqlite3")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite3://corkboard.db')
 
 class Note
 	include DataMapper::Resource
