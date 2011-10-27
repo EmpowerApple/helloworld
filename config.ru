@@ -1,2 +1,2 @@
-require 'helloworld.rb'
+require 'corkboard'
 run Sinatra::Application
